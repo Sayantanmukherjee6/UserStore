@@ -1,0 +1,12 @@
+package com.myspace.userstore;
+
+import java.lang.Number;
+
+rule "userCantBuy"
+	dialect "mvel"
+	when
+		user : User( status == false )
+		User( )
+	then
+		user.setCanPurchase( false );
+end

@@ -1,0 +1,12 @@
+package com.myspace.userstore;
+
+import java.lang.Number;
+
+rule "userAgeBasedPurchaseFail"
+	dialect "mvel"
+	when
+		user : User( age < 18 )
+		store : Store( itemType == "alcohol" )
+	then
+		user.setCanPurchase( false );
+end

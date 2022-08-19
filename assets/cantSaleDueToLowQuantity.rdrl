@@ -1,0 +1,11 @@
+package com.myspace.userstore;
+
+import java.lang.Number;
+
+rule "cantSaleDueToLowQuantity"
+	dialect "mvel"
+	when
+		store : Store( quantity == 0 )
+	then
+		store.setSaleNotAllowed( true );
+end
