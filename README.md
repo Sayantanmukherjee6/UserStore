@@ -11,17 +11,17 @@ Getting intuition about how to interact with drools rest api using Kotlin.
 * By Default there will be space named **MySpace**. Inside that create a project **userstore**.
 * Inside project click on **Import Asset**. Upload all required assets, provided along with this repo.
 * Once done Asset page will look like this:
-* ![decision-boundary](https://github.com/Sayantanmukherjee6/Neural-Network-Decision-Boundary-Using-Keras/blob/master/decision_boundary.gif)
+* ![Asset](https://github.com/Sayantanmukherjee6/UserStore/blob/main/Asset.png)
 * One sample rule:
-* ![decision-boundary](https://github.com/Sayantanmukherjee6/Neural-Network-Decision-Boundary-Using-Keras/blob/master/decision_boundary.gif)
+* ![Guided-Rule](https://github.com/Sayantanmukherjee6/UserStore/blob/main/UserAgeBasedPurchaseGuidedRule.png)
 
 ## Deployment  
 * Deploy the project. On top right side there is a **Deploy** option.
 * Once deployed, from **Menu** on top navigate to **Execution Servers** to check the status.
 * Once everything is good, the deployment page will look like this:
-* ![decision-boundary](https://github.com/Sayantanmukherjee6/Neural-Network-Decision-Boundary-Using-Keras/blob/master/decision_boundary.gif)
+* ![Deploy](https://github.com/Sayantanmukherjee6/UserStore/blob/main/Deploy.png)
 * Once deployed **container-id** is needed. Use postman/curl. For reference check below:
-* ![decision-boundary](https://github.com/Sayantanmukherjee6/Neural-Network-Decision-Boundary-Using-Keras/blob/master/decision_boundary.gif)
+* ![Container-Id](https://github.com/Sayantanmukherjee6/UserStore/blob/main/FetchContainerId.png)
 * Run the Kotlin spring-boot project with correct container-id (change in application.yml is required).
 
 ## Rules and corresponding curl Commands for verification:
